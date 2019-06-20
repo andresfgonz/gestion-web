@@ -1,0 +1,110 @@
+.chat-view-container {
+  flex: 1;
+  display: grid;
+  grid-template-areas: "user messages" "user input";
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 1fr 60px;
+  grid-column-gap: 14px;
+  height: 100%;
+
+  .user-information {
+    background-color: white;
+    grid-area: user;
+    box-shadow: 0 0 2px #dedede;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+    .divisor {
+      align-self: stretch;
+      margin: 10px 10px;
+      height: 1px;
+      background-color: #bbbbbb;
+      opacity: 0.5;
+
+    }
+
+    .info-section {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .user-image {
+        width: 80px;
+        height: 80px;
+        border-radius: 40px;
+      }
+
+      .user-name {
+        font-size: 18px;
+        margin-top: 10px;
+      }
+
+      .commerce-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .commerce-logo {
+          width: 100px;
+          margin-bottom: 15px;
+        }
+
+        .commerce-name {
+          flex: 1;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .message-list {
+    background-color: white;
+    grid-area: messages;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: 100%;
+    border: 1px solid #f2f2f2;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+  }
+
+  .input-section {
+    grid-area: input;
+    display: flex;
+    background-color: #f2f2f2;
+    padding-right: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    .message-form {
+      flex: 1;
+      display: flex;
+
+      .button {
+        width: 100px;
+        height: 40px;
+        align-self: center;
+      }
+    }
+
+    .input-message-container {
+      flex: 1;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+
+      .field {
+        flex: 1;
+      }
+    }
+  }
+}

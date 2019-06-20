@@ -1,0 +1,43 @@
+.service-card {
+  margin: 20px;
+
+  .issue-card {
+    align-self: stretch;
+    height: 60px;
+    display: flex;
+    background-color: white;
+    box-shadow: 0 0 14px #eaeaea;
+    border-radius: 10px;
+    align-items: center;
+    padding: 0 10px;
+    margin-bottom: 5px;
+
+    .issue-description {
+      font-size: 18px;
+    }
+  }
+
+  .card-container {
+    grid-template-columns: 30px 1fr;
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    height: 350px;
+
+    .sub-card {
+      min-height: 80px;
+    }
+
+    .input-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .ui.card {
+      margin: 0;
+      width: auto;
+    }
+  }
+}

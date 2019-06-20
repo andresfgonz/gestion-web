@@ -1,0 +1,22 @@
+.subsidiary-selector {
+  margin-top: 30px;
+
+  .card-container {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    margin-bottom: 5px;
+
+    .input-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .ui.card {
+      margin: 0;
+      width: auto;
+    }
+  }
+}
+
+

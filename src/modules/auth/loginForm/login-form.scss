@@ -1,0 +1,17 @@
+.login-form-container {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+
+  .login-form {
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+
+    .fields-section {
+      flex: 1;
+    }
+  }
+}
+

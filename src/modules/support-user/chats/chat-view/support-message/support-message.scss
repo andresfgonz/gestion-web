@@ -1,0 +1,48 @@
+.support-message-container {
+  min-height: 60px;
+  width: 80%;
+  background-color: #f7f7f7;
+  display: grid;
+  margin-bottom: 10px;
+  border-radius: 5px;
+
+  &.support-message {
+    grid-template-columns: 1fr 60px 60px;
+    grid-template-areas: "content image date";
+    align-self: flex-end;
+    background-color: #ebf7ff;
+  }
+
+  &.user-message {
+    grid-template-columns: 60px 60px 1fr;
+    grid-template-areas: "date image content";
+    align-self: flex-start;
+  }
+
+  .message-date {
+    grid-area: date;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .user-image-container {
+    grid-area: image;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .user-image {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .message-content {
+    grid-area: content;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+}

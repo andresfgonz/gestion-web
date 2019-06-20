@@ -1,0 +1,62 @@
+.create-service-box {
+  width: 100%;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 10px;
+
+  .segment {
+    margin: 0;
+  }
+
+  .dropdown .item {
+    pointer-events: all !important;
+    padding: 0 10px !important;
+    height: 50px !important;
+    align-items: center !important;
+    display: grid !important;
+    grid-template-columns: 90px 2fr;
+
+    img {
+      justify-self: center !important;
+      max-height: 40px !important;
+      max-width: 50px !important;
+    }
+  }
+
+  .commerces {
+    box-shadow: 0 0 14px #e8e8e8;
+    border: 0;
+    margin: 0 !important;
+  }
+
+  .issue-types {
+    display: flex;
+    flex-direction: column;
+
+    .issue-list {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+
+.services-section {
+  display: grid;
+  height: 100%;
+  grid-template-rows: 40px 1fr;
+
+  .services-list {
+    overflow: auto;
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
