@@ -14,10 +14,11 @@ import { ApolloProvider } from 'react-apollo';
 import { AuthModule } from './modules/auth';
 import { SupportUserModule } from './modules/support-user';
 import { Header } from './components/header';
+import { config } from './config';
 
-const httpLink = new HttpLink({ uri: 'http://localhost:3000' });
+const httpLink = new HttpLink({ uri: `http://${config.address}:${config.port}` });
 const wsLink = new WebSocketLink({
-  uri: 'ws://localhost:3000/subscriptions',
+  uri: `ws://${config.address}:${config.port}/subscriptions`,
   options: {
     reconnect: true,
     connectionParams: () => {
