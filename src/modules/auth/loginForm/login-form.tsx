@@ -56,7 +56,7 @@ export const LoginForm = withRouter(({ history }) => {
       localStorage.setItem('sessionUser', JSON.stringify(data.sessionUser));
       history.push('/support');
     } catch (e) {
-      console.log(e);
+      alert(e.message);
     }
   }
 
